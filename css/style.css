@@ -1,0 +1,38 @@
+/*css reset
+html, body, nav, div, ul, li, p, a, h1 {
+    margin: 0;
+    padding: 0;
+    reset <p> to same font width: 70%;
+    font-family: 'Lato', sans-serif;
+}
+*/
+
+body {
+    background-image: url("../pics/candlesnrose.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+#form, #output {
+    margin: 2em;
+    /*padding: 1em;*/
+}
+
+textarea, #output {
+    width: 65%;
+    height: 15em;
+    padding: 5px;
+    background-color: rgba(225,225,225,0.8);
+    font-family: 'Lato', sans-serif;
+    border-color: transparent;
+}
+
+input[type="submit"] {
+    float: inherit;
+}

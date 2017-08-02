@@ -1,24 +1,19 @@
-/*css reset
+/*css reset*/
 html, body, nav, div, ul, li, p, a, h1 {
-    margin: 0;
-    padding: 0;
-    reset <p> to same font width: 70%;
+    /*margin: 0;*/
+    /*padding: 0;*/
     font-family: 'Lato', sans-serif;
 }
-*/
+
 html {
     background-image: url("../pics/candlesnrose.jpg");
     background-repeat: no-repeat;
     background-position: center center; 
     background-attachment: fixed;
-    -webkit-background-size: cover;
     background-size: cover;
 }
+
 body {
-    /*background-image: url("../pics/candlesnrose.jpg");*/
-    /*background-size: 100%;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
     font-family: 'Lato', sans-serif;
 }
 
@@ -26,9 +21,9 @@ h1 {
     display: block;
     color: #fff;
     margin: auto;
-    width: 10%;
+    width: 4em;
     padding: 0.5em;
-    text-shadow: 2px 2px #0f15;
+    text-shadow: 2px 2px #ff0015;
 }
 
 #form {
@@ -36,23 +31,13 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
-/*textarea {*/
-/*    margin: auto;*/
-/*    width: 65%;*/
-/*    height: 15em;*/
-/*    padding: 5px;*/
-/*    background-color: rgba(225,225,225,0.8);*/
-/*    font-family: 'Lato', sans-serif;*/
-/*    border-color: transparent;*/
-/*}*/
-
 input[type="submit"] {
     /*float: inherit;*/
     margin: auto;
     display: block;
 }
 
-textarea, #output {
+textarea {
     display: block;
     margin: auto;
     width: 50%;
@@ -67,6 +52,15 @@ textarea, #output {
 #output {
     text-align: center;
     line-height: 150%;
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 14em;
+    border: 1em;
+    padding: 1em;
+    background-color: rgba(225,225,225,0.8);
+    font-family: 'Lato', sans-serif;
+    border-color: transparent;
 }
 
 #display {

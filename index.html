@@ -4,19 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PoEtIcNeSs</title>
-        <script type="text/javascript" src="js/main.js"></script>
         <link rel="stylesheet" href="css/style.css" type="text/css" >
         <link rel="shortcut icon" href="pics/favicon.ico" type="image/x-icon">
+        <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
-        <h1>E-Poetry</h1>
+        <h1>ePoetry</h1>
         <div id="form">
             <textarea id="textinput">Enter a story, some lyrics, a paragraph, or just some words here</textarea><input type="submit" value="Generate My Poem!" onclick="generatePoem();">
         </div>    
         <div id="output">
-            <p><span id="display">Your Poem Will Appear Here</span></p>
+            <p><span id="display">Your Poem Will Appear Here
+            </span></p>
+        <input onclick="responsiveVoice.speak(stripTags());" type="button" value="Play"/>
         </div>
+        
+        <!-- testing voice widget -->
+     
+        <!--end voice test -->
+        
+        
         <footer>
             
         </footer>

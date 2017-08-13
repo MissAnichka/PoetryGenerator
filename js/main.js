@@ -1,7 +1,7 @@
 
-function generatePoem(text, numLines, numWords) {
+function generatePoem() {
   //accessing user input from website text box:
-  text =  document.getElementById("textinput").value;
+  var text =  document.getElementById("textinput").value;
   text = text.toLowerCase();
   // var abc = 'abcdefghijklmnopqrstuvwxyz'
   var punctuation = '\',.?!#';
@@ -36,8 +36,8 @@ function generatePoem(text, numLines, numWords) {
   }
   
   // randomly generate the length of the poem
-  numLines = random(2,8);
-  numWords = random(2,8);
+  var numLines = random(2,8);
+  var numWords = random(2,8);
   
   // randomly choose the next word in the poem based on the previous word just used:
   function randomValue(obj,key){
@@ -82,5 +82,19 @@ function generatePoem(text, numLines, numWords) {
   var poem = finalPoem.join('<br>');
   return document.getElementById("display").innerHTML = poem;
 }
+
+function stripTags(){
+  let poem = $('#display').html();
+  console.log(typeof(poem));
+  let newPoem = poem.replace(/<br>/g,'  ');
+  console.log(newPoem);
+  return newPoem;
+}
+
+// function speakPoem(){
+//   var say = document.getElementById("display").value;
+//   return document.getElementsByName("onclick").innerHTML = say;
+// }
+
 
 // Meow
